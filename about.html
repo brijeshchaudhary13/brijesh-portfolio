@@ -171,7 +171,7 @@
 
         <div class="stat-card">
           <div class="stat-icon"><i class="bi bi-briefcase"></i></div>
-          <div class="stat-num" id="exp-num">0+</div>
+          <div class="stat-num">4</div>
           <div class="stat-label">Years Exp.</div>
         </div>
 
@@ -288,26 +288,6 @@
 <script src="js/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-  <script>
-  document.addEventListener("DOMContentLoaded", function() {
-  // Set your joining date (Format: YYYY-MM-DD)
-  const joiningDate = new Date("2021-12-29"); // Change to your actual past joining date
-  const today = new Date();
 
-  const expElement = document.getElementById("exp-num");
-  
-  // Ensure the element exists and dates are valid
-  if (expElement && !isNaN(joiningDate) && !isNaN(today)) {
-    let diffTime = today - joiningDate;
-    let diffDays = diffTime / (1000 * 60 * 60 * 24);
-    let years = Math.floor(diffDays / 365.25);
-
-    // Fallback to 0 if negative
-    if (years < 0) years = 0;
-
-    expElement.textContent = years + "+";
-  }
-});
-   </script> 
 </body>
 </html>
